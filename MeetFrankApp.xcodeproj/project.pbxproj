@@ -13,7 +13,18 @@
 		951B53082498BC1600E223DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B53072498BC1600E223DC /* Assets.xcassets */; };
 		951B530B2498BC1600E223DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B530A2498BC1600E223DC /* Preview Assets.xcassets */; };
 		951B530E2498BC1600E223DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951B530C2498BC1600E223DC /* LaunchScreen.storyboard */; };
+		951B531C2498BC3000E223DC /* MeetFrankAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B531B2498BC3000E223DC /* MeetFrankAppUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		951B531E2498BC3000E223DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951B52F62498BC1400E223DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951B52FD2498BC1400E223DC;
+			remoteInfo = MeetFrankApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		951B52FE2498BC1400E223DC /* MeetFrankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetFrankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		951B530A2498BC1600E223DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		951B530D2498BC1600E223DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		951B530F2498BC1600E223DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951B53192498BC3000E223DC /* MeetFrankAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetFrankAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		951B531B2498BC3000E223DC /* MeetFrankAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetFrankAppUITests.swift; sourceTree = "<group>"; };
+		951B531D2498BC3000E223DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		951B52FB2498BC1400E223DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951B53162498BC3000E223DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				951B53002498BC1400E223DC /* MeetFrankApp */,
+				951B531A2498BC3000E223DC /* MeetFrankAppUITests */,
 				951B52FF2498BC1400E223DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				951B52FE2498BC1400E223DC /* MeetFrankApp.app */,
+				951B53192498BC3000E223DC /* MeetFrankAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		951B531A2498BC3000E223DC /* MeetFrankAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				951B531B2498BC3000E223DC /* MeetFrankAppUITests.swift */,
+				951B531D2498BC3000E223DC /* Info.plist */,
+			);
+			path = MeetFrankAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = 951B52FE2498BC1400E223DC /* MeetFrankApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		951B53182498BC3000E223DC /* MeetFrankAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951B53202498BC3000E223DC /* Build configuration list for PBXNativeTarget "MeetFrankAppUITests" */;
+			buildPhases = (
+				951B53152498BC3000E223DC /* Sources */,
+				951B53162498BC3000E223DC /* Frameworks */,
+				951B53172498BC3000E223DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951B531F2498BC3000E223DC /* PBXTargetDependency */,
+			);
+			name = MeetFrankAppUITests;
+			productName = MeetFrankAppUITests;
+			productReference = 951B53192498BC3000E223DC /* MeetFrankAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					951B52FD2498BC1400E223DC = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					951B53182498BC3000E223DC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 951B52FD2498BC1400E223DC;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				951B52FD2498BC1400E223DC /* MeetFrankApp */,
+				951B53182498BC3000E223DC /* MeetFrankAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				951B530E2498BC1600E223DC /* LaunchScreen.storyboard in Resources */,
 				951B530B2498BC1600E223DC /* Preview Assets.xcassets in Resources */,
 				951B53082498BC1600E223DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951B53172498BC3000E223DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		951B53152498BC3000E223DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951B531C2498BC3000E223DC /* MeetFrankAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		951B531F2498BC3000E223DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951B52FD2498BC1400E223DC /* MeetFrankApp */;
+			targetProxy = 951B531E2498BC3000E223DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		951B530C2498BC1600E223DC /* LaunchScreen.storyboard */ = {
@@ -320,6 +398,44 @@
 			};
 			name = Release;
 		};
+		951B53212498BC3000E223DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = MeetFrankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MeetFrankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeetFrankApp;
+			};
+			name = Debug;
+		};
+		951B53222498BC3000E223DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = MeetFrankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MeetFrankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeetFrankApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +453,15 @@
 			buildConfigurations = (
 				951B53132498BC1600E223DC /* Debug */,
 				951B53142498BC1600E223DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951B53202498BC3000E223DC /* Build configuration list for PBXNativeTarget "MeetFrankAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951B53212498BC3000E223DC /* Debug */,
+				951B53222498BC3000E223DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
